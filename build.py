@@ -11,7 +11,11 @@ CHS=[('Ch01','💻','Computer Fundamentals','Computer का परिचय, Ha
 ('Ch03','📝','MS Word','Document बनाना, Formatting, Table, Mail Merge आदि'),
 ('Ch04','📊','MS Excel','Formula, Function, Chart, Pivot Table आदि'),
 ('Ch05','🎞️','MS PowerPoint','Presentation बनाना (Basic Level)'),
-('Ch06','🌐','Network & Internet','Network, Protocol, Internet, Security')]
+('Ch06','🌐','Network & Internet','Network, Protocol, Internet, Security'),
+('Ch07','📧','Email, Social Media & e-Governance','E-mail, Social Networking, e-Commerce, UMANG, DigiLocker'),
+('Ch08','💳','Digital Financial Tools','UPI, QR, OTP, Internet Banking, Online Bill Payment'),
+('Ch09','🛡️','Cyber Security','Virus, Malware, Cryptography व सुरक्षा के उपाय'),
+('Ch10','🤖','Future Skills & AI','IoT, Big Data, Cloud, Blockchain, Artificial Intelligence')]
 E=html.escape
 def runs(p): return [Run(r,p) for r in p._p.iter(qn('w:r'))]
 def rich(p):
@@ -91,12 +95,20 @@ def conv(path,cid,icon,title,desc):
                     if n: b['n'].append(n)
                 L.append(b)
             else: L.append({'l':'','c':'','n':[tbl(t)]})
+    for sc in secs:
+        sc['intro']=[b for b in sc['intro'] if not (re.match(r'Complete Topics',b['l']) and any('Hindi-Medium Educational Material' in n.get('h','') for n in b['n']))]
     if secs and not secs[0]['items']: chintro=secs[0]['intro']; secs=secs[1:]
     return {'id':cid,'icon':icon,'title':title,'desc':desc,'intro':chintro,'secs':secs}
 def plain(h): return html.unescape(re.sub(r'<[^>]+>','',h.replace('<br>',' '))).strip()
+import os
+OLD={e['id']:e for e in (json.load(open('index.json',encoding='utf-8')) if os.path.exists('index.json') else [])}
 idx=[];miss=0
 for pre,icon,title,desc in CHS:
-    f=glob.glob(f'{SRC}/{pre}*.docx')[0]; cid=pre.lower(); c=conv(f,cid,icon,title,desc)
+    fl=glob.glob(f'{SRC}/{pre}*.docx'); cid=pre.lower()
+    if not fl:
+        if cid in OLD: idx.append(OLD[cid]); print(cid,'docx nahi mila - purana rakha')
+        continue
+    f=fl[0]; c=conv(f,cid,icon,title,desc)
     blob=json.dumps(c,ensure_ascii=False); txt=plain(html.unescape(blob.replace('\\"','"')))
     d=docx.Document(f); allp=[q.text for q in d.paragraphs]+[q.text for t in d.tables for r in t.rows for ce in r.cells for q in ce.paragraphs]
     bad=[x for x in set(allp) if x.strip() and not DROP.search(x) and re.sub(r'\s+','',clean(x)) not in re.sub(r'\s+','',txt)]
