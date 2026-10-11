@@ -1,26 +1,25 @@
 <!doctype html><html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Computer Notes — Scholar Computer Institute</title>
 <style>
-:root{--bg:#f6f7fb;--cd:#fff;--tx:#1d2433;--mu:#667085;--ac:#2b5fd9;--bd:#e3e6ee}
-@media(prefers-color-scheme:dark){:root:not([data-t=l]){--bg:#10131a;--cd:#1a1f2b;--tx:#e6e9f0;--mu:#97a0b3;--ac:#7aa2ff;--bd:#2b3242}}
-[data-t=d]{--bg:#10131a;--cd:#1a1f2b;--tx:#e6e9f0;--mu:#97a0b3;--ac:#7aa2ff;--bd:#2b3242}
+:root{color-scheme:dark;--bg:#000;--cd:#12172A;--tx:#EEF0FA;--mu:#9AA0C0;--ac:#22D6CC;--bd:#2C3348;--gd:#E8B94A;--ok:#2ED888;--bt:#1A2038;--pu:#8C6BFF;--on:#000}
+[data-t=l]{color-scheme:light;--bg:#f6f7fb;--cd:#fff;--tx:#1d2433;--mu:#667085;--ac:#2b5fd9;--bd:#e3e6ee;--gd:#8a5a00;--ok:#2e9e5b;--bt:#fff;--pu:#2b5fd9;--on:#fff}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.7 system-ui,"Noto Sans Devanagari",Mangal,sans-serif}
 a{color:var(--ac);text-decoration:none}header{position:sticky;top:0;z-index:5;background:var(--cd);border-bottom:1px solid var(--bd);display:flex;gap:8px;align-items:center;padding:8px 12px}
 header b{white-space:nowrap}header input{flex:1;min-width:0;padding:8px 12px;border:1px solid var(--bd);border-radius:20px;background:var(--bg);color:var(--tx);font:inherit}
-button{font:inherit;background:var(--cd);color:var(--tx);border:1px solid var(--bd);border-radius:10px;padding:6px 12px;cursor:pointer}
+button{font:inherit;background:var(--bt);color:var(--tx);border:1px solid var(--bd);border-radius:10px;padding:6px 12px;cursor:pointer}
 main{max-width:1000px;margin:0 auto;padding:14px}.cr{color:var(--mu);font-size:14px;margin-bottom:6px}
 .g{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;margin:12px 0}
 .cd{display:block;background:var(--cd);border:1px solid var(--bd);border-radius:14px;padding:14px;color:var(--tx)}
-.cd:hover{border-color:var(--ac)}.cd .i{font-size:30px}.cd h3{margin:4px 0;font-size:17px;line-height:1.4}.cd p{margin:0;color:var(--mu);font-size:14px;line-height:1.5}
+.cd:hover{border-color:var(--pu)}.cd .i{font-size:30px}.cd h3{margin:4px 0;font-size:17px;line-height:1.4}.cd p{margin:0;color:var(--mu);font-size:14px;line-height:1.5}
 .pg{height:6px;background:var(--bd);border-radius:3px;margin-top:10px;overflow:hidden}.pg i{display:block;height:100%;background:var(--ac)}
-.cd.dn{border-color:#2e9e5b}.lay{display:grid;grid-template-columns:260px 1fr;gap:16px}
+.cd.dn{border-color:var(--ok)}.lay{display:grid;grid-template-columns:260px 1fr;gap:16px}
 aside{position:sticky;top:60px;align-self:start;max-height:80vh;overflow:auto;background:var(--cd);border:1px solid var(--bd);border-radius:12px;padding:8px}
-aside a{display:block;padding:5px 8px;border-radius:8px;color:var(--tx);font-size:14px;line-height:1.4}aside a.on{background:var(--ac);color:#fff}aside a.dn:before{content:"✓ ";color:#2e9e5b}
+aside a{display:block;padding:5px 8px;border-radius:8px;color:var(--tx);font-size:14px;line-height:1.4}aside a.on{background:var(--ac);color:var(--on)}aside a.dn:before{content:"✓ ";color:var(--ok)}
 article{background:var(--cd);border:1px solid var(--bd);border-radius:14px;padding:16px;min-width:0}article h2{margin-top:0;line-height:1.4}
-.bx{--c:#888;border-left:5px solid var(--c);background:color-mix(in srgb,var(--c) 9%,var(--cd));border-radius:8px;padding:8px 14px;margin:14px 0}
-.bl{font-weight:700;margin-bottom:2px}.bx p,.bx ul{margin:6px 0}ul{padding-left:22px;margin:8px 0}li.n{list-style:none;margin-left:-22px}
-.tw{overflow-x:auto;margin:10px 0}table{border-collapse:collapse;min-width:100%}td,th{border:1px solid var(--bd);padding:6px 10px;vertical-align:top;text-align:left}th{background:color-mix(in srgb,var(--ac) 14%,var(--cd))}
-code{background:var(--bg);border-radius:4px;padding:1px 5px}details.ans{display:block;margin-top:4px;padding:4px 10px;border:1px dashed #2e9e5b;border-radius:8px}details>summary{cursor:pointer;color:var(--ac);font-weight:600}
-.nv{display:flex;justify-content:space-between;gap:8px;margin-top:18px;flex-wrap:wrap}.rs a{display:block;background:var(--cd);border:1px solid var(--bd);border-radius:10px;padding:8px 12px;margin:8px 0;color:var(--tx)}.rs small{color:var(--mu);display:block}
+.bx{--c:#888;border-left:5px solid color-mix(in srgb,var(--c) 75%,var(--tx));background:color-mix(in srgb,var(--c) 9%,var(--cd));border-radius:8px;padding:8px 14px;margin:14px 0}
+.bl{font-weight:700;margin-bottom:2px;color:var(--gd)}.bx p,.bx ul{margin:6px 0}ul{padding-left:22px;margin:8px 0}li.n{list-style:none;margin-left:-22px}
+.tw{overflow-x:auto;margin:10px 0}table{border-collapse:collapse;min-width:100%}td,th{border:1px solid var(--bd);padding:6px 10px;vertical-align:top;text-align:left}th{background:var(--bt);color:var(--gd)}
+code{background:var(--bg);border-radius:4px;padding:1px 5px}details.ans{display:block;margin-top:4px;padding:4px 10px;border:1px dashed var(--ok);border-radius:8px}details>summary{cursor:pointer;color:var(--gd);font-weight:600}
+.nv a button{min-width:56px;font-size:20px;line-height:1.2}.nv{display:flex;justify-content:space-between;gap:8px;margin-top:18px;flex-wrap:wrap}.rs a{display:block;background:var(--cd);border:1px solid var(--bd);border-radius:10px;padding:8px 12px;margin:8px 0;color:var(--tx)}.rs small{color:var(--mu);display:block}
 @media(max-width:760px){.lay{grid-template-columns:1fr}aside{position:static;max-height:none}}
 @media print{header,aside,.nv,button{display:none}.lay{display:block}article{border:0}}
 </style></head><body>
@@ -30,7 +29,7 @@ code{background:var(--bg);border-radius:4px;padding:1px 5px}details.ans{display:
 const app=document.getElementById('app'),CA={};let IDX=[];
 const L=k=>{try{return JSON.parse(localStorage.getItem(k))}catch(e){return null}},S=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
 const done=()=>L('done')||{},TD=document.createElement('textarea'),pl=h=>(TD.innerHTML=h.replace(/<br>/g,' ').replace(/<[^>]+>/g,''),TD.value);
-const ld=async id=>CA[id]||(CA[id]=await(await fetch(id+'.json')).json());
+const ld=async id=>CA[id]||(CA[id]=await(await fetch(id+'.json?v=20261011')).json());
 const bar=(a,b)=>`<div class="pg"><i style="width:${b?100*a/b:0}%"></i></div>`;
 const cnt=(c,s)=>Object.keys(done()).filter(k=>k.startsWith(c+'/'+(s===undefined?'':s+'/'))).length;
 function ans(h){const i=h.indexOf('✅');return i>0&&/उत्तर|Answer/.test(h.slice(i,i+40))?h.slice(0,i).replace(/(\s|—|–|-|<b>)+$/,'')+`<details class="ans"><summary>उत्तर देखें</summary>${h.slice(i)}</details>`:h}
@@ -44,8 +43,8 @@ async function route(){const p=location.hash.replace(/^#\/?/,'').split('/').filt
  if(!p[0]){app.innerHTML=`<h2>📚 Chapters</h2><div class="g">${IDX.map(c=>`<a class="cd" href="#/${c.id}"><div class="i">${c.icon}</div><h3>${c.title}</h3><p>${c.desc}</p><p>${c.secs>1?c.secs+' Modules · ':''}${c.items} Topics</p>${bar(cnt(c.id),c.items)}</a>`).join('')}</div>`;return}
  const c=await ld(p[0]),m=IDX.find(x=>x.id==p[0]);let h=`<div class="cr"><a href="#/">Home</a> › <a href="#/${c.id}">${c.icon} ${c.title}</a>`;
  if(p.length==3){const s=c.secs[p[1]],it=s.items[p[2]],F=flat(c),k=F.findIndex(x=>x.s==p[1]&&x.i==p[2]),d=done(),K=key(c.id,p[1],p[2]);
-  const nb=(x,t)=>x?`<a href="#/${c.id}/${x.s}/${x.i}"><button>${t}</button></a>`:'<span></span>';
-  app.innerHTML=h+(c.secs.length>1?` › <a href="#/${c.id}/${p[1]}">${s.t}</a>`:'')+`</div><div class="lay"><aside>${s.items.map((x,j)=>`<a class="${j==p[2]?'on ':''}${d[key(c.id,p[1],j)]?'dn':''}" href="#/${c.id}/${p[1]}/${j}">${x.t}</a>`).join('')}</aside><article><h2>${it.t}</h2>${blks(it.b)}<div class="nv">${nb(F[k-1],'← पिछला')}<button id="rd">${d[K]?'✓ पढ़ लिया':'☐ पढ़ लिया चिह्नित करें'}</button>${nb(F[k+1],'अगला →')}</div></article></div>`;
+  const nb=(x,t,n)=>x?`<a href="#/${c.id}/${x.s}/${x.i}" aria-label="${n}"><button title="${n}">${t}</button></a>`:'<span></span>';
+  app.innerHTML=h+(c.secs.length>1?` › <a href="#/${c.id}/${p[1]}">${s.t}</a>`:'')+`</div><div class="lay"><aside>${s.items.map((x,j)=>`<a class="${j==p[2]?'on ':''}${d[key(c.id,p[1],j)]?'dn':''}" href="#/${c.id}/${p[1]}/${j}">${x.t}</a>`).join('')}</aside><article><h2>${it.t}</h2>${blks(it.b)}<div class="nv">${nb(F[k-1],'←','पिछला')}<button id="rd">${d[K]?'☑ हो गया':'☐ हो गया?'}</button>${nb(F[k+1],'→','अगला')}</div></article></div>`;
   document.getElementById('rd').onclick=()=>{const d=done();d[K]?delete d[K]:d[K]=1;S('done',d);route()};S('last',location.hash);return}
  if(p.length==2){const s=c.secs[p[1]];app.innerHTML=h+` › ${s.t}</div><h2>${s.t}</h2>${blks(s.intro)}${cards(c.id,0,s.items.map((x,j)=>[p[1],j,x.t]))}`;return}
  app.innerHTML=h+`</div><h2>${c.icon} ${c.title}</h2>${blks(c.intro)}`+(c.secs.length>1?`<div class="g">${c.secs.map((s,si)=>`<a class="cd" href="#/${c.id}/${si}"><h3>${s.t}</h3><p>${s.items.length} Topics</p>${bar(cnt(c.id,si),s.items.length)}</a>`).join('')}</div>`:(c.secs[0]?blks(c.secs[0].intro)+cards(c.id,0,c.secs[0].items.map((x,j)=>[0,j,x.t])):''))}
@@ -53,6 +52,6 @@ let T;document.getElementById('q').oninput=e=>{clearTimeout(T);const q=e.target.
  const R=[];for(const c of IDX){const C=await ld(c.id);C.secs.forEach((s,si)=>s.items.forEach((it,ii)=>{const tx=pl(it.t+' '+it.b.map(b=>b.l+' '+b.n.map(n=>n.h||n.r.flat().join(' ')).join(' ')).join(' ')),j=tx.toLowerCase().indexOf(q);if(j>=0)R.push([it.t.toLowerCase().includes(q)?0:1,`<a href="#/${c.id}/${si}/${ii}" onclick="q.value=''"><b>${it.t}</b><small>${c.title} · …${tx.slice(Math.max(0,j-40),j+90)}…</small></a>`])}))}
  R.sort((a,b)=>a[0]-b[0]);app.innerHTML=`<h2>🔎 ${R.length} नतीजे</h2><div class="rs">${R.slice(0,40).map(r=>r[1]).join('')}</div>`},250)};
 const th=document.getElementById('th');if(L('t'))document.documentElement.dataset.t=L('t');
-th.onclick=()=>{const dk=document.documentElement.dataset.t=='d'||(!document.documentElement.dataset.t&&matchMedia('(prefers-color-scheme:dark)').matches);const v=dk?'l':'d';document.documentElement.dataset.t=v;S('t',v)};
-addEventListener('hashchange',route);fetch('index.json').then(r=>r.json()).then(j=>{IDX=j;route()}).catch(()=>app.innerHTML='<p>Data load नहीं हुआ — site को GitHub Pages/सर्वर से खोलें।</p>');
+th.onclick=()=>{const v=document.documentElement.dataset.t=='l'?'d':'l';document.documentElement.dataset.t=v;S('t',v)};
+addEventListener('hashchange',route);fetch('index.json?v=20261011').then(r=>r.json()).then(j=>{IDX=j;route()}).catch(()=>app.innerHTML='<p>Data load नहीं हुआ — site को GitHub Pages/सर्वर से खोलें।</p>');
 </script></body></html>
