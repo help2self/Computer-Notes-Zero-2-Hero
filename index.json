@@ -1,1 +1,82 @@
-[{"id": "ch01", "icon": "💻", "title": "Computer Fundamentals", "desc": "Computer का परिचय, Hardware, Software, भाषाएँ व इतिहास", "secs": 7, "items": 49}, {"id": "ch02", "icon": "🪟", "title": "Windows", "desc": "Operating System व Windows का उपयोग", "secs": 1, "items": 30}, {"id": "ch03", "icon": "📝", "title": "MS Word", "desc": "Document बनाना, Formatting, Table, Mail Merge आदि", "secs": 26, "items": 215}, {"id": "ch04", "icon": "📊", "title": "MS Excel", "desc": "Formula, Function, Chart, Pivot Table आदि", "secs": 27, "items": 315}, {"id": "ch05", "icon": "🎞️", "title": "MS PowerPoint", "desc": "Presentation बनाना (Basic Level)", "secs": 1, "items": 11}, {"id": "ch06", "icon": "🌐", "title": "Network & Internet", "desc": "Network, Protocol, Internet, Security", "secs": 7, "items": 53}, {"id": "ch07", "icon": "📧", "title": "Email, Social Media & e-Governance", "desc": "E-mail, Social Networking, e-Commerce, UMANG, DigiLocker", "secs": 1, "items": 8}, {"id": "ch08", "icon": "💳", "title": "Digital Financial Tools", "desc": "UPI, QR, OTP, Internet Banking, Online Bill Payment", "secs": 1, "items": 6}, {"id": "ch09", "icon": "🛡️", "title": "Cyber Security", "desc": "Virus, Malware, Cryptography व सुरक्षा के उपाय", "secs": 1, "items": 9}, {"id": "ch10", "icon": "🤖", "title": "Future Skills & AI", "desc": "IoT, Big Data, Cloud, Blockchain, Artificial Intelligence", "secs": 1, "items": 13}]
+[
+ {
+  "id": "ch01",
+  "icon": "💻",
+  "title": "Computer Fundamentals",
+  "desc": "Computer का परिचय, Hardware, Software, भाषाएँ व इतिहास",
+  "secs": 7,
+  "items": 26
+ },
+ {
+  "id": "ch02",
+  "icon": "🪟",
+  "title": "Windows",
+  "desc": "Operating System व Windows का उपयोग",
+  "secs": 1,
+  "items": 30
+ },
+ {
+  "id": "ch03",
+  "icon": "📝",
+  "title": "MS Word",
+  "desc": "Document बनाना, Formatting, Table, Mail Merge आदि",
+  "secs": 25,
+  "items": 85
+ },
+ {
+  "id": "ch04",
+  "icon": "📊",
+  "title": "MS Excel",
+  "desc": "Formula, Function, Chart, Pivot Table आदि",
+  "secs": 27,
+  "items": 118
+ },
+ {
+  "id": "ch05",
+  "icon": "🎞️",
+  "title": "MS PowerPoint",
+  "desc": "Presentation बनाना (Basic Level)",
+  "secs": 1,
+  "items": 11
+ },
+ {
+  "id": "ch06",
+  "icon": "🌐",
+  "title": "Network & Internet",
+  "desc": "Network, Protocol, Internet, Security",
+  "secs": 7,
+  "items": 53
+ },
+ {
+  "id": "ch07",
+  "icon": "📧",
+  "title": "Email, Social Media & e-Governance",
+  "desc": "E-mail, Social Networking, e-Commerce, UMANG, DigiLocker",
+  "secs": 1,
+  "items": 8
+ },
+ {
+  "id": "ch08",
+  "icon": "💳",
+  "title": "Digital Financial Tools",
+  "desc": "UPI, QR, OTP, Internet Banking, Online Bill Payment",
+  "secs": 1,
+  "items": 6
+ },
+ {
+  "id": "ch09",
+  "icon": "🛡️",
+  "title": "Cyber Security",
+  "desc": "Virus, Malware, Cryptography व सुरक्षा के उपाय",
+  "secs": 1,
+  "items": 9
+ },
+ {
+  "id": "ch10",
+  "icon": "🤖",
+  "title": "Future Skills & AI",
+  "desc": "IoT, Big Data, Cloud, Blockchain, Artificial Intelligence",
+  "secs": 1,
+  "items": 7
+ }
+]
